@@ -1,11 +1,11 @@
-# Team Name
+# Sophos
 
 Project description (~1 paragraph)
 
 ## Team Members and Roles
 
 - [Spencer Nelson](https://github.com/nelsosp/CIS641-HW2-Nelson) (Role 1, Role 2)
-- Member 2 (Role 3, Role 4)
+- [Manohar Reddy Gaddam](https://github.com/manohargaddam/CIS641-HW2-gaddam)
 - Member 3 (Role 5, Role 6)
 
 ## Prerequisites
