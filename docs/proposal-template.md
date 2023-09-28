@@ -19,6 +19,7 @@ The application's core functionality will be to facilitate the creation and mana
 We intend to use the agile scrum method.
 
 **Structured Plan**
+
 *Meeting Schedule:*
 
 - Weekly meeting: Every Monday at 7:00 PM / every wednesday after class
