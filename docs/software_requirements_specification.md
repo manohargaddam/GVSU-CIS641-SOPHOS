@@ -5,13 +5,13 @@
 ## Functional Requirements
 
 1. Feature 1
-1. req 1
-1. req 2
-1. req 3
+   1. req 1
+   1. req 2
+   1. req 3
 
 ## Non-Functional Requirements
 
 1. Feature 2
-1. req 1
-1. req 2
-1. req 3
+   1. req 1
+   1. req 2
+   1. req 3
