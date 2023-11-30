@@ -28,21 +28,25 @@ ID | Requirement
 - FR4 | Users shall have direct access to their recent retrospective boards.
 - FR5 | System shall display updated shared boards users may be included in.
 
-<!-- ### Name of Feature 3
-ID | Requirement
-FR1 | Requirement 1
-FR2 | Requirement 2
-FR3 | Requirement 3
-FR4 | Requirement 4
-FR5 | Requirement 5 -->
+### Login Screen
 
-<!-- ### Name of Feature 4
 ID | Requirement
-FR1 | Requirement 1
-FR2 | Requirement 2
-FR3 | Requirement 3
-FR4 | Requirement 4
-FR5 | Requirement 5 -->
+
+- FR1 | Users shall be able to register for an account
+- FR2 | System shall display login failures
+- FR3 | System shall secure passwords once account is created
+- FR4 | Requirement 4
+- FR5 | Requirement 5
+
+### Retrospective Cards
+
+ID | Requirement
+
+- FR1 | Users shall be able to customize the appearance of their retrospective cards, such as choosing a different color.
+- FR2 | Users shall be able to vote on retro cards during the retrospective.
+- FR3 | The system shall calculate and display the total number of votes on each card.
+- FR4 | Users shall be able to create, edit, or delete retrospective cards in a section.
+- FR5 | The system shall provide real-time updates to users, showing changes made by others.
 
 <!-- ### Name of Feature 5
 ID | Requirement
@@ -74,21 +78,25 @@ ID | Non-Functional Requirement
 - FR4 | System shall handle button inputs by users within 1 second of processing.
 - FR5 | Users shall be able to scroll smoothly when needed.
 
-<!-- ### Name of Feature 3
-ID | Non-Functional Requirement
-FR1 | Non-Functional Requirement 1
-FR2 | Non-Functional Requirement 2
-FR3 | Non-Functional Requirement 3
-FR4 | Non-Functional Requirement 4
-FR5 | Non-Functional Requirement 5 -->
+### Login Screen
 
-<!-- ### Name of Feature 4
 ID | Non-Functional Requirement
-FR1 | Non-Functional Requirement 1
-FR2 | Non-Functional Requirement 2
-FR3 | Non-Functional Requirement 3
-FR4 | Non-Functional Requirement 4
-FR5 | Non-Functional Requirement 5 -->
+
+- FR1 | Login Screen shall take special characters such as !, ?, and \*.
+- FR2 | Login Screen shall be user-friendly and easy to navigate.
+- FR3 | Login Screen shall be quick and responsive under 3 seconds.
+- FR4 | Login Screen shall have two-factor authentication by phone number.
+- FR5 | Login Screen shall load username and password to cloud such as AWS for data protection.
+
+### Retrospective Cards
+
+ID | Non-Functional Requirement
+
+- FR1 | Retrospective Cards shall handle a substantial number of concurrent users without reducing the performance.
+- FR2 | Retrospective Cards shall respond to user actions promptly, ensuring low latency.
+- FR3 | Retrospective Cards shall ensure optimal resource utilization and prevent overloads.
+- FR4 | User shall have the ability to change colors of cards to green, red, purple, or more.
+- FR5 | Retrospective Cards shall be able to work across platforms such as firefox, chrome, google.
 
 <!-- ### Name of Feature 5
 ID | Non-Functional Requirement
