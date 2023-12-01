@@ -115,7 +115,29 @@ ID | Non-Functional Requirement
 
 # Change Management Plan
 
-<!-- Description of what this section is -->
+### Acquire Change Management Team
+
+- Allow managers to collaborate with personel who expertise in this field.
+- Get on training programs and work one on one with problems that may come up and help with solutions.
+- Keep a change management personel alongside even after new system is implemented to ensure transition phase is completed and approved.
+
+### Employee Involvement
+
+- Allow employee engagement of the new system periodically or within a certain timeframe.
+- Allow feedback from the change process phase to see what could be done better or enhanced.
+- Listen to employees wants and needs in order to make the best possible system for everyone.
+
+### Training Programs
+
+- Start small training programs as necessary
+- Keep them sweet, short, concise
+- Excite the employees to show why this system will improve ease of life
+
+### Performance Metrics
+
+- Show higher leadership what the new system improves from the older system
+- Keep track of metrics such as time efficiency, budget increases, expense reductions, etc...
+- Provide up to date metrics of employee feedback and business enhancement so fallback to the original system does not occur
 
 # Traceability Links
 
