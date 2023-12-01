@@ -1,6 +1,9 @@
 # Overview
 
-<!-- Describe purpose of this document in 1 paragraph or less....hint: it is your SRS -->
+The purpose of this software requirements specification for Retro board application is to clearly define the functional and non-functional requirements of the system, and to ensure that the development team understands what features and capabilities the system should have. This SRS serves as a blueprint for the development of the system and provides a reference for testing,
+maintenance, and support.
+
+By defining the purpose of the system clearly, stakeholders can ensure that the system meets their needs and expectations and is delivered on time and within budget.
 
 # Software Requirements
 
