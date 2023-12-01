@@ -48,13 +48,15 @@ ID | Requirement
 - FR4 | Users shall be able to create, edit, or delete retrospective cards in a section.
 - FR5 | The system shall provide real-time updates to users, showing changes made by others.
 
-<!-- ### Name of Feature 5
+### Retrospective Collaboration
+
 ID | Requirement
-FR1 | Requirement 1
-FR2 | Requirement 2
-FR3 | Requirement 3
-FR4 | Requirement 4
-FR5 | Requirement 5 -->
+
+- FR1 | The system shall allow users to invite other members to join a retrospective board by email or username.
+- FR2 | The system shall recognize owner of the shared board
+- FR3 | The system shall recognize collaborators of the shared board
+- FR4 | The system shall allow simultaneous editing between collaborators
+- FR5 | The system shall allow board owners permissions of access or revoking.
 
 ## Non-Functional Requirements
 
@@ -98,13 +100,15 @@ ID | Non-Functional Requirement
 - FR4 | User shall have the ability to change colors of cards to green, red, purple, or more.
 - FR5 | Retrospective Cards shall be able to work across platforms such as firefox, chrome, google.
 
-<!-- ### Name of Feature 5
+### Retrospective Collaboration
+
 ID | Non-Functional Requirement
-FR1 | Non-Functional Requirement 1
-FR2 | Non-Functional Requirement 2
-FR3 | Non-Functional Requirement 3
-FR4 | Non-Functional Requirement 4
-FR5 | Non-Functional Requirement 5 -->
+
+- FR1 | Collaboration system shall handle 10+ users for simultaneous work
+- FR2 | Collaboration system shall provide real time updates within 5 seconds after editing
+- FR3 | Users shall navigate any operating system such as firefox, chrome, safari.
+- FR4 | Collaboration system shall backup data on AWS/other cloud service.
+- FR5 | Collaboration system shall run efficiently with low latency.
 
 # Change Management Plan
 
