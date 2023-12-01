@@ -8,7 +8,7 @@
 
 ## Functional Requirements
 
-### Retrospective Boards
+### Boards
 
 ID | Requirement
 
@@ -38,7 +38,7 @@ ID | Requirement
 - FR4 | Requirement 4
 - FR5 | Requirement 5
 
-### Retrospective Cards
+### Cards
 
 ID | Requirement
 
@@ -48,7 +48,7 @@ ID | Requirement
 - FR4 | Users shall be able to create, edit, or delete retrospective cards in a section.
 - FR5 | The system shall provide real-time updates to users, showing changes made by others.
 
-### Retrospective Collaboration
+### Collaboration
 
 ID | Requirement
 
@@ -60,7 +60,7 @@ ID | Requirement
 
 ## Non-Functional Requirements
 
-### Retrospective Boards
+### Boards
 
 ID | Non-Functional Requirement
 
@@ -90,7 +90,7 @@ ID | Non-Functional Requirement
 - FR4 | Login Screen shall have two-factor authentication by phone number.
 - FR5 | Login Screen shall load username and password to cloud such as AWS for data protection.
 
-### Retrospective Cards
+### Cards
 
 ID | Non-Functional Requirement
 
@@ -100,7 +100,7 @@ ID | Non-Functional Requirement
 - FR4 | User shall have the ability to change colors of cards to green, red, purple, or more.
 - FR5 | Retrospective Cards shall be able to work across platforms such as firefox, chrome, google.
 
-### Retrospective Collaboration
+### Collaboration
 
 ID | Non-Functional Requirement
 
