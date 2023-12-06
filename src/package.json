@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production",
-    "deploy": "firebase login && ng test --configuration production && ng build --configuration production && firebase deploy",
+    "deploy": "firebase login && ng build --configuration production && firebase deploy",
     "test": "ng test --configuration production",
     "test:ci": "ng test --configuration ci",
     "lint": "ng lint",
