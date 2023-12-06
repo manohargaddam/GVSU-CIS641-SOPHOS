@@ -1,0 +1,131 @@
+@import 'grid';
+@import 'variables';
+@import '~bootstrap-4-grid/scss/grid';
+
+* {
+  font-family: 'Monaco', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: $color-alpha2;
+  color: $color-alpha;
+  overflow: hidden;
+}
+
+main {
+  // background-image: radial-gradient( circle 674px at 18.3% 77%,  rgba(139,186,244,1) 3.4%, rgba(15,51,92,1) 56.6% );
+  min-height: 100vh;
+}
+
+.glass {
+  animation: glassAnimation 5s ease-in;
+  backdrop-filter: $blur;
+  background: $glass-background;
+  border-radius: 5px;
+  box-shadow: $border-wrapper;
+  height: 90vh;
+  padding: 8px;
+  transition: ease all .5s;
+  width: 80%;
+  z-index: 2;
+
+  @include media-breakpoint-down(md) {
+    width: 95%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 90%;
+  }
+
+  &__wrapper {
+    height: calc(90vh - 16px);
+    overflow: auto;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #122743;
+      background-clip: padding-box;
+      border: 4px solid transparent;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 15px;
+    }
+  }
+}
+
+.dashboards-list__item {
+  .mat-list-item-content {
+    justify-content: space-between;
+  }
+}
+
+.mat-select-panel,
+.mat-menu-panel {
+  -webkit-backdrop-filter: $blur;
+  backdrop-filter: $blur;
+  background: rgba(255, 255, 255, 0.65) !important;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.mat-select-panel {
+  mat-option {
+    font-size: 14px !important;
+  }
+}
+
+.share-modal {
+  .mat-dialog-container {
+    padding: 0;
+  }
+}
+
+.dashboard-panel {
+  mat-tab-body {
+    height: 100%;
+
+    &,
+    .mat-tab-body-content {
+      overflow: hidden !important;
+    }
+  }
+}
+
+mat-button-toggle-group {
+  .mat-button-toggle .mat-button-toggle-ripple, .mat-button-toggle-focus-overlay {
+    border-radius: 9px;
+  }
+
+  mat-button-toggle {
+    border-left: none !important;
+  }
+
+  .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 26px !important;
+  }
+
+  .mat-button-toggle-label-content {
+    padding: 0 20px !important;
+  }
+}
+
+app-dashboard-panel-actions {
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+}
+
+// // Animations
+// @keyframes glassAnimation {
+//   0% {
+//     backdrop-filter: unset;
+//     border: 0;
+//   }
+//   100% {
+//     backdrop-filter: $blur;
+//   }
+// }

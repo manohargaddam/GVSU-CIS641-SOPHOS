@@ -1,0 +1,46 @@
+@import 'variables';
+
+.login {
+  margin: 15px;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: none;
+  color: $color-alpha;
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
+
+  .mat-card-title {
+    margin-bottom: 15px;
+  }
+
+  .mat-raised-button,
+  .mat-card-subtitle {
+    color: $color-alpha;
+  }
+
+  &__actions {
+    margin-top: 15px;
+  }
+
+  &__divider {
+    margin: 10px 0;
+  }
+
+  &__login-btn,
+  &__google-btn {
+    background-color: rgba(255, 255, 255, 0.65);
+  }
+
+  &__register-link {
+    color: darken($color-alpha, 10%);
+    font-weight: 700;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: $color-alpha;
+      text-decoration: underline;
+    }
+  }
+}

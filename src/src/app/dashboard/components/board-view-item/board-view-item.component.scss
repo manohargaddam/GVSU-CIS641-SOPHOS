@@ -1,0 +1,53 @@
+.board-view-item {
+  margin-top: 10px;
+  min-height: 100px;
+  padding: 10px;
+  transition: .3s;
+  border-radius: 3px;
+  box-shadow: -1px -1px 0px 0 rgb(255 255 255 / 80%), 1px 1px 0px 0 rgb(255 255 255 / 20%);
+
+  &--editable {
+    cursor: pointer;
+  }
+
+  > div {
+    width: 100%;
+  }
+
+  &__likes-wrapper {
+    mat-icon {
+      cursor: pointer;
+      opacity: 0.5;
+      margin-right: 3px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__likes {
+    max-width: 132px;
+    border-radius: 50px;
+    overflow-x: hidden;
+
+    div {
+      img {
+        width: 20px;
+        margin: 0 -3px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      &:first-child {
+        img {
+          margin-left: 0px;
+        }
+      }
+
+      &:last-child {
+        img {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

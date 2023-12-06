@@ -1,0 +1,12 @@
+@import 'variables';
+
+.dashboard-panel {
+  &__tab {
+    color: $color-alpha;
+  }
+
+  &__actions {
+    margin-top: 20px;
+    padding: 0 30px;
+  }
+}

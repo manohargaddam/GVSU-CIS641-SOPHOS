@@ -1,0 +1,48 @@
+<main class="d-flex justify-content-center align-items-center">
+  <div class="glass">
+    <div class="glass__wrapper">
+      <div class="dashboard-panel">
+        <mat-tab-group mat-align-tabs="center" animationDuration="0ms">
+          <ng-container *ngIf="boards$ | async as boards">
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <span class="dashboard-panel__tab" [matBadge]="boards.length" matBadgeOverlap="false">My boards</span>
+              </ng-template>
+              <div class="dashboard-panel__actions">
+                <app-dashboard-panel-actions
+                  [creator]="true"
+                  (createBoard)="openDashboardModal()"
+                  (search)="onBoardsSearch($event, true)"
+                ></app-dashboard-panel-actions>
+              </div>
+              <app-dashboards-list *ngIf="boards.length; else empty" [boards]="boards" [creator]="true"
+                [searchQuery]="searchBoards$ | async" (editBoard)="openDashboardModal($event)"
+                (removeBoard)="onRemoveBoard($event)" (shareUrl)="onShareUrl($event)"
+                (freeze)="onFreeze($event)"></app-dashboards-list>
+            </mat-tab>
+          </ng-container>
+
+          <ng-container *ngIf="sharedWithMe$ | async as boards">
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <span class="dashboard-panel__tab" [matBadge]="boards.length" matBadgeOverlap="false">Shared with
+                  Me</span>
+              </ng-template>
+              <div *ngIf="boards.length" class="dashboard-panel__actions">
+                <app-dashboard-panel-actions (search)="onBoardsSearch($event)"></app-dashboard-panel-actions>
+              </div>
+              <app-dashboards-list *ngIf="boards.length; else empty" [boards]="boards"
+                [searchQuery]="searchSharedWithMe$ | async"></app-dashboards-list>
+            </mat-tab>
+          </ng-container>
+        </mat-tab-group>
+      </div>
+
+      <ng-template #empty>
+        <div class="text-center mt-5">
+          You don't have any boards
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</main>

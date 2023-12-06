@@ -1,0 +1,22 @@
+@import 'variables';
+
+.auth {
+  height: calc(100% - 120px);
+
+  &__wrapper {
+    backdrop-filter: $blur;
+    background: $glass-background;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+    transition: ease all .5s;
+
+    @media (max-width: $screen-md-max) {
+      max-width: 420px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      max-width: 95%;
+    }
+  }
+}

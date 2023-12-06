@@ -1,0 +1,28 @@
+<div class="board-edit-item">
+  <div class="d-flex align-items-start">
+    <textarea class="board-edit-item__field p-0 w-100" appAutofocus #textarea rows="4" [value]="value"></textarea>
+    <button
+      (click)="onClose($event)"
+      class="board-edit-item__icon"
+      mat-icon-button
+      aria-label="Cancel"
+    ><mat-icon>cancel</mat-icon>
+    </button>
+  </div>
+  <div class="d-flex justify-content-between">
+    <button
+      class="board-edit-item__btn"
+      (click)="onSave($event, textarea.value.trim())"
+    >{{ value.length ? 'Save' : 'Add' }}
+    </button>
+    <button
+      *ngIf="value.length"
+      (click)="onRemove($event)"
+      class="board-edit-item__icon"
+      color="warn"
+      mat-icon-button
+      aria-label="Remove"
+    ><mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>

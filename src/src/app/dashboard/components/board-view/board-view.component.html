@@ -1,0 +1,57 @@
+<main class="d-flex justify-content-center align-items-center">
+  <div class="glass">
+    <div class="glass__wrapper">
+      <div *ngIf="board$ | async as board" class="board">
+        <div class="d-flex flex-column align-items-start flex-md-row justify-content-md-end align-items-md-center">
+          <button *ngIf="!board.completed" (click)="onShareUrl(board)" mat-icon-button color="primary"
+            aria-label="Share" matTooltip="Share board URL">
+            <mat-icon>share</mat-icon>
+          </button>
+        </div>
+        <div class="board__body">
+          <div class="board__body-header d-flex">
+            <h1>{{board.title}}</h1>
+          </div>
+
+          <ng-container
+            *ngIf="{columns: columns$ | async, likes: likes$ | async, posts: posts$ | async, search: search$ | async } as data">
+            <div cdkDropListGroup class="board__columns-wrapper d-flex justify-content-between">
+              <div *ngFor="let column of data.columns | orderBy:'position'" class="board__column w-100" cdkDropList
+                [cdkDropListData]="column" (cdkDropListDropped)="onDrop($event)">
+
+                <div class="d-flex flex-column align-items-center">
+                  <div class="d-flex justify-content-between w-100" style="margin-bottom: 10px;">
+                    <span>{{column.title}}</span>
+                  </div>
+
+                  <div *ngIf="!board.completed" class="board__column-new-item w-100">
+                    <button class="w-100" (click)="toggle(column.title, true)"
+                      [ngStyle]="{'background-color': '#567188' }" mat-raised-button color="primary">+</button>
+                  </div>
+                </div>
+
+                <div class="board__item" *ngIf="addNewPostToggleMap[column.title]"
+                  [ngStyle]="{'border-color': column.color }">
+                  <app-board-edit-item (close)="toggle(column.title, false)"
+                    (save)="onSaveNewItem($event, column)"></app-board-edit-item>
+                </div>
+
+                <ng-container *ngFor="let item of data.posts | filter:'value':data.search">
+                  <app-board-view-item *ngIf="item.columnPosition === column.position" cdkDrag [cdkDragData]="item"
+                    [cdkDragDisabled]="!(user.email === item.creator || user.email === board.creator)"
+                    [edit]="editPostToggleMap[item.id] && (user.email === item.creator || user.email === board.creator)"
+                    [editable]="editable && (user.email === item.creator || user.email === board.creator)"
+                    [color]="column.color" [likes]="likesMap[item.id]" [post]="item" [user]="user"
+                    (addRemoveLike)="onAddRemoveLike($event)" (save)="onEditItem($event)"
+                    (remove)="onEditItem($event, true)"
+                    (toggle)="onToggleItem($event, board.completed)"></app-board-view-item>
+                </ng-container>
+
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

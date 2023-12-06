@@ -1,0 +1,40 @@
+.header {
+  padding: 10px 30px;
+
+  &__user-name {
+    opacity: 0.8;
+    font-weight: 600;
+  }
+
+  &__user {
+    button {
+      border-radius: 50%;
+      height: 50px;
+      min-width: 50px !important;
+    }
+
+    &-img {
+      border-radius: 50%;
+      max-height: 30px;
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:focus {
+      outline: none;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -.16px;
+      opacity: 0.9;
+      color: #b1c6e2;
+    }
+  }
+}

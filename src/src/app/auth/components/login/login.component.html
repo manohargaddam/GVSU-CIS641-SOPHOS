@@ -1,0 +1,49 @@
+<mat-card class="login">
+  <mat-card-title>Login to Retrofy</mat-card-title>
+
+  <mat-card-content style="margin-top: 40px;">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <mat-form-field *ngIf="form.get('email') as email" class="w-100" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="Email" formControlName="email">
+        <mat-error *ngIf="email.invalid">
+          <ng-container *ngIf="email.errors?.required">
+            Please enter Email.
+          </ng-container>
+          <ng-container *ngIf="email.errors?.email">
+            Please enter valid Email.
+          </ng-container>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field *ngIf="form.get('password') as password" class="w-100" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Password" formControlName="password">
+        <mat-error *ngIf="password.invalid">
+          Please enter valid Password.
+        </mat-error>
+      </mat-form-field>
+
+      <div class="login__actions">
+        <ng-container *ngIf="{loading: loading$ | async} as state">
+          <mat-progress-spinner class="m-auto" *ngIf="state.loading" diameter="30"
+            mode="indeterminate"></mat-progress-spinner>
+          <ng-container *ngIf="!state.loading">
+            <button class="login__login-btn w-100" mat-raised-button color="primary"
+              [disabled]="form.invalid">Login</button>
+            <div class="login__divider">
+              or
+            </div>
+            <button class="login__google-btn w-100" (click)="onSignInWithGoogle()" type="button" mat-raised-button>
+              Login with Google
+            </button>
+          </ng-container>
+        </ng-container>
+      </div>
+    </form>
+  </mat-card-content>
+
+  <p>Don't have an account? <a class="login__register-link" routerLink="/register"
+      queryParamsHandling="preserve">Register</a></p>
+</mat-card>

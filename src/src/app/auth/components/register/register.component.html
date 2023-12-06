@@ -1,0 +1,45 @@
+<mat-card class="register">
+  <mat-card-title>Register to Retrofy</mat-card-title>
+
+  <mat-card-content style="margin-top: 40px;">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <mat-form-field *ngIf="form.get('displayName') as displayName" class="w-100" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="displayName">
+        <mat-error *ngIf="displayName.invalid">
+          Please enter Name.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field *ngIf="form.get('email') as email" class="w-100" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="Email" formControlName="email">
+        <mat-error *ngIf="email.invalid">
+          <ng-container *ngIf="email.errors?.required">
+            Please enter Email.
+          </ng-container>
+          <ng-container *ngIf="email.errors?.email">
+            Please enter valid Email.
+          </ng-container>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field *ngIf="form.get('password') as password" class="w-100" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Password" formControlName="password">
+        <mat-error *ngIf="password.invalid">
+          Please enter valid Password.
+        </mat-error>
+      </mat-form-field>
+
+      <div class="register__actions">
+        <ng-container *ngIf="{loading: loading$ | async} as state">
+          <mat-progress-spinner class="m-auto" *ngIf="state.loading" diameter="30" mode="indeterminate"></mat-progress-spinner>
+          <button class="register__register-btn w-100" *ngIf="!state.loading" mat-raised-button color="primary" [disabled]="form.invalid">Register</button>
+        </ng-container>
+      </div>
+    </form>
+  </mat-card-content>
+  <p>Already have an account? <a class="register__login-link" routerLink="/login"queryParamsHandling="preserve">Login</a></p>
+</mat-card>
