@@ -59,7 +59,7 @@ ID | Requirement
 - FR22 | The system shall recognize owner of the shared board
 - FR23 | The system shall recognize collaborators of the shared board
 - FR24 | The system shall allow simultaneous editing between collaborators
-- FR25 | The system shall allow board owners permissions of access or revoking.
+- FR25 | The system shall allow board owners to share board to respective users
 
 ## Non-Functional Requirements
 
