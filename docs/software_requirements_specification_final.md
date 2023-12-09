@@ -141,4 +141,35 @@ ID | Non-Functional Requirement
 
 # Traceability Links
 
-<!-- Description of this section -->
+<!-- <description of this section> -->
+
+## Use Case Diagram Traceabiltiy
+
+### Home Screen
+
+Artifact ID | Artifact Name | Req. ID
+UseCase 1 | Create Board | FR1
+UseCase 2 | Join Board | FR21
+UseCase 3 | Share Board | FR25
+UseCase 4 | View Board | FR4
+
+### Board Screen
+
+Artifact ID | Artifact Name | Req. ID
+UseCase 1 | Add Card | FR19
+UseCase 2 | Delete Card | FR19
+UseCase 3 | Edit Card | FR19
+UseCase 4 | Move Card | FR18
+UseCase 5 | Add Section | FR18
+UseCase 6 | Rename Section| FR18
+UseCase 7 | Delete Section| FR18
+UseCase 8 | Sync. Board | FR20
+
+## Class Diagram Traceability
+
+Artifact Name | Requirement ID
+class Board | FR1, FR2, FR25, FR21, NFR1, NFR2, NFR3, NFR4
+classSection | FR18, FR19, FR16, NFR19
+classSignUp | FR11, FR13, NFR11, NFR13
+classUser | FR15, NFR13
+classLogin | FR12, FR13, FR14, NFR12, NFR11, NFR14, NFR15
