@@ -38,8 +38,8 @@ ID | Requirement
 - FR11 | Users shall be able to register for an account
 - FR12 | System shall display login failures
 - FR13 | System shall secure passwords once account is created
-- FR14 | Requirement 4
-- FR15 | Requirement 5
+- FR14 | Users shall be able to login when account is created.
+- FR15 | Users shall be able logout after logging into system.
 
 ### Cards
 
@@ -67,51 +67,51 @@ ID | Requirement
 
 ID | Non-Functional Requirement
 
-- FR1 | System shall load quickly no matter the size of data.
-- FR2 | System shall display easy to use interface for those with less techincal expertise.
-- FR3 | System shall be able to load retrospective boards to the cloud to reduce data loss upon crashes.
-- FR4 | System shall handle retrospective boards field smoothly across windows and mac.
-- FR5 | System shall be able to handle 30+ retrospective boards.
+- NFR1 | System shall load quickly no matter the size of data.
+- NFR2 | System shall display easy to use interface for those with less techincal expertise.
+- NFR3 | System shall be able to load retrospective boards to the cloud to reduce data loss upon crashes.
+- NFR4 | System shall handle retrospective boards field smoothly across windows and mac.
+- NFR5 | System shall be able to handle 30+ retrospective boards.
 
 ### Home Screen Dashboard
 
 ID | Non-Functional Requirement
 
-- FR6 | System shall load home screen quickly upon login.
-- FR7 | System shall display a user-friendly dashboard.
-- FR8 | System shall be able to large amounts of data for scalability.
-- FR9 | System shall handle button inputs by users within 1 second of processing.
-- FR10 | Users shall be able to scroll smoothly when needed.
+- NFR6 | System shall load home screen quickly upon login.
+- NFR7 | System shall display a user-friendly dashboard.
+- NFR8 | System shall be able to large amounts of data for scalability.
+- NFR9 | System shall handle button inputs by users within 1 second of processing.
+- NFR10 | Users shall be able to scroll smoothly when needed.
 
 ### Login Screen
 
 ID | Non-Functional Requirement
 
-- FR11 | Login Screen shall take special characters such as !, ?, and \*.
-- FR12 | Login Screen shall be user-friendly and easy to navigate.
-- FR13 | Login Screen shall be quick and responsive under 3 seconds.
-- FR14 | Login Screen shall have two-factor authentication by phone number.
-- FR15 | Login Screen shall load username and password to cloud such as AWS for data protection.
+- NFR11 | Login Screen shall take special characters such as !, ?, and \*.
+- NFR12 | Login Screen shall be user-friendly and easy to navigate.
+- NFR13 | Login Screen shall be quick and responsive under 3 seconds.
+- NFR14 | Login Screen shall have two-factor authentication by phone number.
+- NFR15 | Login Screen shall load username and password to cloud such as AWS for data protection.
 
 ### Cards
 
 ID | Non-Functional Requirement
 
-- FR16 | Retrospective Cards shall handle a substantial number of concurrent users without reducing the performance.
-- FR17 | Retrospective Cards shall respond to user actions promptly, ensuring low latency.
-- FR18 | Retrospective Cards shall ensure optimal resource utilization and prevent overloads.
-- FR19 | User shall have the ability to change colors of cards to green, red, purple, or more.
-- FR20 | Retrospective Cards shall be able to work across platforms such as firefox, chrome, google.
+- NFR16 | Retrospective Cards shall handle a substantial number of concurrent users without reducing the performance.
+- NFR17 | Retrospective Cards shall respond to user actions promptly, ensuring low latency.
+- NFR18 | Retrospective Cards shall ensure optimal resource utilization and prevent overloads.
+- NFR19 | User shall have the ability to change colors of cards to green, red, purple, or more.
+- NFR20 | Retrospective Cards shall be able to work across platforms such as firefox, chrome, google.
 
 ### Collaboration
 
 ID | Non-Functional Requirement
 
-- FR21 | Collaboration system shall handle 10+ users for simultaneous work
-- FR22 | Collaboration system shall provide real time updates within 5 seconds after editing
-- FR23 | Users shall navigate any operating system such as firefox, chrome, safari.
-- FR24 | Collaboration system shall backup data on AWS/other cloud service.
-- FR25 | Collaboration system shall run efficiently with low latency.
+- NFR21 | Collaboration system shall handle 10+ users for simultaneous work
+- NFR22 | Collaboration system shall provide real time updates within 5 seconds after editing
+- NFR23 | Users shall navigate any operating system such as firefox, chrome, safari.
+- NFR24 | Collaboration system shall backup data on AWS/other cloud service.
+- NFR25 | Collaboration system shall run efficiently with low latency.
 
 # Change Management Plan
 
