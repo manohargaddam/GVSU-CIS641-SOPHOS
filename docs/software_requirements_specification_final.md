@@ -46,8 +46,8 @@ ID | Requirement
 ID | Requirement
 
 - FR16 | Users shall be able to customize the appearance of their retrospective cards, such as choosing a different color.
-- FR17| Users shall be able to vote on retro cards during the retrospective.
-- FR18 | The system shall calculate and display the total number of votes on each card.
+- FR17 | Users shall be able to vote on retro cards during the retrospective.
+- FR18 | The system shall allow users to create, edit, or delete retrospective sections.
 - FR19 | Users shall be able to create, edit, or delete retrospective cards in a section.
 - FR20 | The system shall provide real-time updates to users, showing changes made by others.
 
