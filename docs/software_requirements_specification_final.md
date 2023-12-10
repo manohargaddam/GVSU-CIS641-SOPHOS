@@ -17,7 +17,7 @@ FR1 | The system shall allow users to create a new retrospective board when sess
 FR2 | Users shall be able to edit or delete retrospective boards when they exist.
 FR3 | Users shall be able to name retrospective boards when creation is initiated.
 FR4 | The system shall allow existing boards to be viewed.
-FR5 | Requirement 5
+FR5 | The system shall allow users to rename boards when edit is clicked.
 
 ### Home Screen Dashboard
 
