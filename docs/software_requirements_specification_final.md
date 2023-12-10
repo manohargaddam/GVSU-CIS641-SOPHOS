@@ -119,11 +119,11 @@ In order to acheive a highly successful change management plan, we have put toge
 
 ### Acquire Change Management Team
 
-To begin, one of the best ways to ensure the change management plan is to acquire a change management team. This shall allow managers to collaborate with personel who expertise in this field. Additionally, it allows managers to get hands on training with these experience personel and work one on one with problems that may come up, and how to find solutions to handle them. Lastly, it would be a good idea to keep these expert personel alongside even after the new system is implemented to ensure transition phase is completed and proceeds to move forward smoothly.
+To begin, one of the best ways to ensure the change management plan is to acquire a change management team. This shall allow managers to collaborate with personel who expertise in this field. Additionally, it allows managers to get hands on training with these experienced personel and work one on one with problems that may come up, and how to find solutions to handle them. Lastly, it would be a good idea to keep these expert personel alongside even after the new system is implemented to ensure transition phase is completed and proceeds to move forward smoothly.
 
 ### Employee Involvement
 
-Next, we would like to get employee engagement of the new system periodically or within a certain timeframe. In other words, allows employees to try it out, but still have the ability to go back to the old system since the new one will not be implemented right away. In correlation, this can also allow feedback from the change process phase to see what could be done better or enhanced. Furthermore, it would be beneficial to listen to employees wants and needs at this stage to make the best possible system for everyone.
+Next, we would like to get employee engagement of the new system periodically or within a certain timeframe. In other words, allow employees to try it out, but still have the ability to go back to the old system since the new one will not be implemented right away. In correlation, this can also allow feedback from the change process phase to see what could be done better or enhanced. Furthermore, it would be beneficial to listen to employees wants and needs at this stage to make the best possible system for everyone.
 
 ### Training Programs
 
