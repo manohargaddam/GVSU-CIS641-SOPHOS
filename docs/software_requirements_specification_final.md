@@ -195,6 +195,8 @@ Artifact ID | Artifact Name | Req. ID
 | Activity Diagram - Home Screen  | Save Board	    |FR1, FR3, FR10, NFR6, NFR7, NFR8, NFR10
 
 # Software Artifacts
+[Project Proposal](https://github.com/manohargaddam/GVSU-CIS641-SOPHOS/blob/main/docs/proposal-template.md)
+[SRS Document](https://github.com/manohargaddam/GVSU-CIS641-SOPHOS/blob/main/docs/software_requirements_specification.md)
 [Usecases-Board Screen](https://github.com/manohargaddam/GVSU-CIS641-SOPHOS/blob/main/artifacts/Usecases%20-%20Board%20Screen.pdf)
 [Usecases - Home Screen](https://github.com/manohargaddam/GVSU-CIS641-SOPHOS/blob/main/artifacts/Usecases%20-%20Home%20Screen.pdf)
 [Activity Diagram - Board Screen](https://github.com/manohargaddam/GVSU-CIS641-SOPHOS/blob/main/artifacts/Activity%20Diagram%20-%20Board%20Screen.pdf)  
